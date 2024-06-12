@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Modal from "react-modal";
 import "./App.css";
-import ModalForm from "./assets/modal";
+import ModalForm from "./modal";
 
 function App() {
   const [openModal, setOpenModal] = useState(false);
