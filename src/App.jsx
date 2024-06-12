@@ -1,5 +1,4 @@
-// app.js
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Modal from "react-modal";
 import "./modal.css";
 
@@ -15,6 +14,29 @@ export default function App() {
   const handleClose = () => {
     setOpen(false);
   };
+
+  const handleOverlayClick = (event) => {
+    if (event.target.classList.contains("modal-overlay")) {
+      handleClose();
+    }
+  };
+
+  useEffect(() => {
+    if (open) {
+      document
+        .getElementById("root")
+        .addEventListener("click", handleOverlayClick);
+    } else {
+      document
+        .getElementById("root")
+        .removeEventListener("click", handleOverlayClick);
+    }
+    return () => {
+      document
+        .getElementById("root")
+        .removeEventListener("click", handleOverlayClick);
+    };
+  }, [open]);
 
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent the default form submission
