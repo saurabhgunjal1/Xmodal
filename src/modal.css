@@ -13,8 +13,6 @@
 }
 
 .modal-content {
-  width: 150px;
-  height: 250px;
   background: white;
   padding: 20px;
   border-radius: 4px;
@@ -32,6 +30,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .submit-button {
