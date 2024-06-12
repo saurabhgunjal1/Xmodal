@@ -1,3 +1,4 @@
+// app.js
 import React, { useState } from "react";
 import Modal from "react-modal";
 import "./modal.css";
@@ -66,6 +67,7 @@ export default function App() {
         onRequestClose={handleClose}
         className="modal"
         overlayClassName="modal-overlay"
+        shouldCloseOnOverlayClick={true}
       >
         <div className="modal-content">
           <h3>Fill Details</h3>
