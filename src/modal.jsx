@@ -41,14 +41,14 @@ export default function ModalForm({ closeModal }) {
           <label htmlFor="username">Username:</label>
           <input type="text" name="username" id="username" required />
 
-          <label htmlFor="useremail">Email Address:</label>
-          <input type="email" name="useremail" id="useremail" required />
+          <label htmlFor="email">Email Address:</label>
+          <input type="email" name="useremail" id="email" required />
 
-          <label htmlFor="usernumber">Phone Number:</label>
-          <input type="text" name="usernumber" id="usernumber" required />
+          <label htmlFor="phone">Phone Number:</label>
+          <input type="text" name="usernumber" id="phone" required />
 
-          <label htmlFor="userDob">Date of Birth:</label>
-          <input type="date" name="userDob" id="userDob" required />
+          <label htmlFor="dob">Date of Birth:</label>
+          <input type="date" name="userDob" id="dob" required />
 
           <button type="submit">Submit</button>
         </form>
