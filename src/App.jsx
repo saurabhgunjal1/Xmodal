@@ -15,9 +15,6 @@ export default function App() {
     setOpen(false);
   };
 
-  const handleOverlayClick = () => {
-    setOpen(false); // Close the modal when the overlay is clicked
-  };
   const handleSubmit = (e) => {
     e.preventDefault(); // Prevent the default form submission
 
@@ -69,7 +66,6 @@ export default function App() {
         onRequestClose={handleClose}
         className="modal"
         overlayClassName="modal-overlay"
-        onOverlayClick={handleOverlayClick}
       >
         <div className="modal-content">
           <h3>Fill Details</h3>
